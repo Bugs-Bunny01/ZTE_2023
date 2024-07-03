@@ -1,0 +1,27 @@
+1.	修改各个文件路径
+
+2.	运行img-3.py
+
+3.	运行change files.py
+
+4.	首先，将上一步输出的png_files文件，保存到/HAT-main/datasets/png_files路径，并且修改‘HAT_SRx2_ImageNet-pretrain.yml’内的文件路径；
+	最后，在终端输入python hat/test.py -opt options/test/HAT_SRx2_ImageNet-pretrain.yml
+	net_g_latest.pth是自己训练的预训练模型文件
+	HAT_SRx2_ImageNet-pretrain.pth是官方预训练文件
+	
+
+5.	运行files.py
+
+6.	运行resize.py
+
+7.	运行fusion.py
+
+8.	运行multi.py
+
+
+配置环境:
+	PyTorch >= 1.7 (Recommend NOT using torch 1.8!!! It would cause abnormal performance.)
+	pip install -r requirements.txt
+	python setup.py develop
+
+	如果要训练，pytorch版本>=1.9
